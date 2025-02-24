@@ -81,7 +81,7 @@ aside {
     float: right;
     margin-top: 2px;
     margin-right: 24px;
-    background-image: url(icons/accordion.svg); 
+    background-image: url(icons/add.svg); 
 }
 
 ul {
@@ -108,8 +108,11 @@ li a.active {
     background: rgba(238, 238, 238, .12);
     border-left: 2px solid white;
 }
-li a.active .i-accordion {
+li a.active .i-accordion-chevron {
     /* transform: rotate(180deg); */
+}
+li a.active .i-accordion {
+    background-image: url(icons/minus.svg);
 }
 a {
     text-decoration: none;
