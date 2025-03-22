@@ -81,7 +81,7 @@ aside {
     float: right;
     margin-top: 2px;
     margin-right: 24px;
-    background-image: url(icons/add.svg); 
+    background-image: url(icons/chevron.svg); 
 }
 
 ul {
@@ -94,7 +94,6 @@ ul {
 li a {
     padding: 8px 0;
     padding-left: 40px;
-    border-left: 2px solid #1f1f1f;
     display: inline-block;
     width: 100%;
 }
@@ -106,13 +105,10 @@ li a {
 li a:hover,
 li a.active {
     background: rgba(238, 238, 238, .12);
-    border-left: 2px solid white;
 }
-li a.active .i-accordion-chevron {
-    /* transform: rotate(180deg); */
-}
-li a.active .i-accordion {
-    background-image: url(icons/minus.svg);
+
+li a.expanded .i-accordion {
+    transform: rotate(180deg);
 }
 a {
     text-decoration: none;
@@ -139,6 +135,7 @@ li a.active ~ .sub-menu {
     background-image: url('icons/arrow-right.svg');
     background-repeat: no-repeat;
 }
+
 
 .section-label {
     font-size: 12px;
